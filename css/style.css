@@ -1,0 +1,49 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #b91450;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    margin: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.form-biglietto, .biglietto {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.form-biglietto-campi {
+    display: flex;
+    justify-content: center;
+}
+
+.tile {
+    display: flex;
+    flex-direction: column;
+}
+
+.biglietto {
+    display: none;
+    margin-top: 40px;
+}
+
+.biglietto.open {
+    display: block;
+}
+
+
+
