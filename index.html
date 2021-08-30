@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Biglietto del treno con form</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+      <!-- /google fonts -->
+      <!-- css -->
       <link rel="stylesheet" href="css/style.css">
+      <!-- /css -->
+      <title>Biglietto del treno con form</title>
   </head>
   <body>
     <div class="container">
@@ -42,12 +49,32 @@
 
         <!-- biglietto -->
         <h2>IL TUO BIGLIETTO</h2>
+        
         <div id="biglietto" class="biglietto">
-          <div id="nome-passeggero"></div>
-          <div id="tipo-offerta"></div>
-          <div id="carrozza"></div>
-          <div id="codice-cp"></div>
-          <div id="totale"></div>
+            <h3>DETTAGLIO PASSEGGERI</h3>
+            <div class="card">
+                <div class="card-child biglietto-nome">
+                    <h4>NOME PASSEGGERO</h4>
+                    <div id="nome-passeggero"></div>
+                </div>
+                <div class="card-child biglietto-offerta">
+                    <h4>Tipologia Biglietto</h4>
+                    <div id="tipo-offerta"></div>
+                </div>
+                <div class="card-child biglietto-carrozza">
+                    <h4>Carrozza</h4>
+                    
+                    <div id="carrozza"></div>
+                </div>
+                <div class="card-child biglietto-codice">
+                    <h4>Codice CP</h4>
+                    <div id="codice-cp"></div>
+                </div>
+                <div class="card-child biglietto-costo">
+                    <h4>Costo Biglietto</h4>
+                    <div id="totale"></div>
+                </div>
+            </div>
         </div>
         <!-- /biglietto -->
     </div>

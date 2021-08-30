@@ -4,13 +4,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --color-main : hsl(236, 68%, 44%);
+    --color-light : hsl(195, 53%, 43%);
+    --color-text : hsl(0, 0%, 0%);
+    --color-text-2 : hsl(0, 0%, 100%);
+}
 
 body {
-    background-color: #b91450;
+    background-color: var(--color-main);
+    font-family: 'Poppins', sans-serif;
 }
 
 h2 {
-    color: #fff;
+    color: var(--color-text-2);
     text-align: center;
     margin: 20px;
 }
@@ -21,7 +28,7 @@ h2 {
 }
 
 .form-biglietto, .biglietto {
-    background-color: #fff;
+    background-color: var(--color-text-2);
     padding: 20px;
     text-align: center;
 }
@@ -29,20 +36,94 @@ h2 {
 .form-biglietto-campi {
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .tile {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    margin: 0 20px;
+}
+
+.tile label {
+    font-size: 20px;
+    color: var(--color-main);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.tile input, select {
+    border: 2px solid var(--color-main); 
+    border-radius: 10px;
+    padding-left: 5px;
+    font-size: 18px;
+    height: 30px;
+    caret-color: var(--color-main);
+}
+
+.tile input:focus, select:focus {
+    outline: none;
+}
+
+.form-biglietto-bottoni {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--color-light);
+    color: var(--color-text-2);
+    border: none;
+    margin: 0 10px ;
+    font-family: 'Poppins', sans-serif;
+    transition: .4s;
+}
+
+button:hover {
+    opacity: .7;
 }
 
 .biglietto {
     display: none;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .biglietto.open {
     display: block;
+}
+
+h3 {
+    text-align: left;
+}
+
+.card {
+    display: flex;
+    border: 1px solid var(--color-light);
+    text-align: left;
+
+}
+
+.card-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 50px;
+    padding: 20px;
+}
+
+.biglietto-nome {
+    background-color: var(--color-light);
+    color: var(--color-text-2)
+}
+
+@media screen and (max-width: 835px){
+    .form-biglietto-campi, .card {
+        flex-direction: column;
+    }
 }
 
 
