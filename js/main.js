@@ -76,6 +76,7 @@ btnAnnulla.addEventListener("click",
         document.getElementById('nome').value = "";
         document.getElementById('km').value = "";
         document.getElementById('fascia').value = "";
+        iltuo.style.display = "none";
         
     }
 );
