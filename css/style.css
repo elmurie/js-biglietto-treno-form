@@ -92,6 +92,10 @@ button:hover {
     opacity: .7;
 }
 
+#iltuo {
+    display: none;
+}
+
 .biglietto {
     display: none;
     margin-top: 20px;
