@@ -138,6 +138,10 @@ h3 {
     .form-biglietto-campi, .card {
         flex-direction: column;
     }
+    .tile {
+        width: 100%;
+        margin: 0;
+    }
 }
 
 
