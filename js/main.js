@@ -6,11 +6,28 @@ var btnAnnulla = document.getElementById('annulla');
 btnGenera.addEventListener('click', 
     function() {
         // logica di generazione del biglietto 
-
+        
         // 3. prendo i valori dei campi input e select
         var nome = document.getElementById('nome').value;
+        // Controllo nome
+        if ( !(isNaN(nome)) || nome == "") {
+            alert("Inserisci un nome valido!");
+            end;
+        }
+
         var km = parseInt(document.getElementById('km').value);
+        // Controllo km
+        if ( document.getElementById('km').value == 0 || document.getElementById('km').value == "undefined" ) {
+            alert("Inserisci il numero di km!");
+            end;
+        }
+
         var fasciaEta = document.getElementById('fascia').value;
+        // Controllo select
+        if ( document.getElementById('fascia').value == "" ) {
+            alert("Scegli una fascia d'età!");
+            end;
+        }
 
         // 4. calcolo il prezzo in base alla fascia d'età
         var prezzo = km * 0.21;
@@ -56,6 +73,6 @@ btnAnnulla.addEventListener("click",
         document.getElementById('nome').value = "";
         document.getElementById('km').value = "";
         document.getElementById('fascia').value = "";
-
+        
     }
 );
