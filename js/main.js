@@ -66,7 +66,7 @@ btnGenera.addEventListener('click',
     }
 );
 
-// al click del bottone genera 
+// al click del bottone annulla 
 btnAnnulla.addEventListener("click",
     function() {
         // nascondo il biglietto
