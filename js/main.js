@@ -18,7 +18,7 @@ btnGenera.addEventListener('click',
         
         var km = parseInt(document.getElementById('km').value);
         // Controllo km
-        if ( document.getElementById('km').value == 0 || document.getElementById('km').value == "undefined" ) {
+        if ( isNaN(km) ) {
             alert("Inserisci il numero di km!");
             end;
         }
