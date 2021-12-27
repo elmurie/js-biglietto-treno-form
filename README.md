@@ -8,7 +8,7 @@ The price is calculated by length and discount are calculated according to the a
 Deployed to https://elmurie.github.io/js-biglietto-treno-form/
 
 <details>
-  <summary>Screenshots</summary>
+  <summary>Screenshot</summary>
   <img src="https://i.imgur.com/sBVyofl.png" name="1">
 </details>
 
